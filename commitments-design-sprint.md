@@ -20,4 +20,4 @@ hur, när och vem gör code reviews:
   Vi tar ansvaret tillsammans
   
 hur er tidsplans ser ut, vad ni har för milstolpar och hur ni hanterar om ni märker att ni hamnar efter/före i planeringen: 
-  - Tanken är att tidigt börja arbeta på projektet för att inte hamna efter. Har man tid över kan man lägga det på kvalitetsarbete.
+  Tanken är att tidigt börja arbeta på projektet för att inte hamna efter. Har man tid över kan man lägga det på kvalitetsarbete.
