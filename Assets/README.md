@@ -14,3 +14,7 @@ Under "vårt sortiment" har vi knappar för alla kategorier. Vid hover-state få
 Knapparna för cookies ska vid hover-state bli vita
 
 Ikonerna för sociala medier ska vid hover-state ska få färgen blå
+
+"Vårt sortiment" är den första rubriken.
+"Nocco news" är den andra rubriken.
+"Vart kan man köpa nocco" är den tredje rubriken
