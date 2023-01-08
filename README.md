@@ -3,3 +3,5 @@
 About the design
 
 /*Skriv en kort motivering (max 500 ord) kring hur ni gjort era designval, t.ex. val av färger, typsnitt, form på knappar, menyn, osv. Som en bakgrundsinformation.*/
+
+Vi har kommit överens om att ha en grönaktig bakgrundsfärg hela vägen i kombination med svart färg på tex meny och brödtext. Vi har skapat en simpel och tydlig design där drycken är i fokus. Som typsnitt har vi valt Roboto regular 400. Menyknappen samt ikonerna för social medier har vi lagt på minst 35px för tillgängliheten. De övriga knapparna har vi dragit ut på bredden.
