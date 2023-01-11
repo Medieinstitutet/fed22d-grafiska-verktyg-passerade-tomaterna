@@ -3,32 +3,26 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: bolder;
-
-  color-scheme: light dark;
+  color-scheme: dark;
   color: #222222;
   background-color: #38834d;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {
   font-weight: 500;
+  color: #72cf26;
   color: #fdfdfd;
   text-decoration: inherit;
+  justify-content: stretch;
 }
 a:hover {
-  color: #535bf2;
+  color: hotpink;
 }
 
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  place-items: center;
   min-width: 100vw;
   min-height: 100vh;
 }
@@ -37,9 +31,12 @@ img {
   max-width: 80%;
 }
 
-nav {
-  display: flex;
-  width: 100%;
+#hamburger {
+  background-color: #222222;
+  color: #ffffff;
+  max-width: 50%;
+  min-height: 100vh;
+  z-index: 10;
 }
 
 .hidden {
@@ -145,11 +142,20 @@ input {
 
 
 #slideShow {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   height:100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
 .logo {
