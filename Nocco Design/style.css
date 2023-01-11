@@ -162,13 +162,11 @@ h1 {
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
   will-change: filter;
   position: absolute;
-  height: 100px;
+  height: 120px;
+  width: 140px;
   left: 50%;
-  top: -10%;
   transform: translate(-50%, -50%);
 }
 .logo:hover {
