@@ -1,12 +1,12 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: bolder;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #222222;
+  background-color: #38834d;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,9 +27,33 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
+}
+
+img {
+  max-width: 80%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.visa {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -37,7 +61,7 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
+#slideShow {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;

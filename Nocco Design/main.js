@@ -1,23 +1,34 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import '/Nocco Design/array.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
+document.querySelector('#slideShow').innerHTML = `
+<div class="imgSlider">
+<img src="Assets/Slideshow/cola.png"></img><br>
+<span class="material-symbols-outlined" id="arrow_left">
+arrow_left
+</span>
+<span class="material-symbols-outlined" id="arrow_right">
+arrow_right
+</span>
+</div>
 `
 
-setupCounter(document.querySelector('#counter'))
+const menuBtn = document.getElementById('menuBtn')
+menuBtn.addEventListener("click", toggleClass)
+const closeBtn = document.getElementById('closeBtn')
+closeBtn.addEventListener("click", toggleClass)
+const arrowLeft = document.getElementById('arrow_left')
+arrowLeft.addEventListener("click", togglePics)
+const arrowRight = document.getElementById('arrow_right')
+arrowRight.addEventListener("click", togglePics)
+
+function togglePics() {
+  console.log('Hej hej')
+}
+
+function toggleClass(){
+  console.log('hej');
+  hamburger.classList.toggle('hidden');
+  menuBtn.classList.toggle('hidden');
+  closeBtn.classList.toggle('visa');
+}
