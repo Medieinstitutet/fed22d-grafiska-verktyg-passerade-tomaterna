@@ -4,12 +4,12 @@ import '/Nocco Design/array.js'
 document.querySelector('#slideShow').innerHTML = `
 <div class="imgSlider">
 <img src="Assets/Slideshow/cola.png"></img><br>
-<span class="material-symbols-outlined" id="arrow_left">
+<button class="material-symbols-outlined" id="arrow_left">
 arrow_left
-</span>
-<span class="material-symbols-outlined" id="arrow_right">
+</button>
+<button class="material-symbols-outlined" id="arrow_right">
 arrow_right
-</span>
+</button>
 </div>
 `
 
