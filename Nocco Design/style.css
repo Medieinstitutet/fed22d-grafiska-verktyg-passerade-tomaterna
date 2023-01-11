@@ -51,14 +51,6 @@ header {
   background-color: #1a1a1a;
 }
 
-.logo img {
-  position: absolute;
-  height: 100px;
-  left: 50%;
-  top: -10%;
-  transform: translate(-50%, -50%);
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -173,6 +165,11 @@ h1 {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
+  position: absolute;
+  height: 100px;
+  left: 50%;
+  top: -10%;
+  transform: translate(-50%, -50%);
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
