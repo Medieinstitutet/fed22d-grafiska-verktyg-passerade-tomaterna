@@ -27,15 +27,12 @@ menuBtn.addEventListener("click", toggleClass)
 closeBtn.addEventListener("click", toggleClass)
 arrowLeft.addEventListener("click", imageSliderMinus)
 arrowRight.addEventListener("click", imageSliderPlus)
-let i = 0; 			// Start Point
-let images = [];	// Images Array
-	 
-// Image List
+let i = 0;
+let images = [];
 images[0] = "Assets/Slideshow/cola.png";
 images[1] = "Assets/Slideshow/focus.png";
 images[2] = "Assets/Slideshow/frame.png";
 
-// Change Image
 function imageSliderPlus(){
 	document.slider.src = images[i]; 
 	if(i < images.length - 1){
