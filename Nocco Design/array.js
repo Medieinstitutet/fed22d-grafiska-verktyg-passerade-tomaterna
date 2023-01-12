@@ -6,4 +6,3 @@ const imageArray = [
     img: ["Assets/Slideshow/focus.png"]
 }
 ]
-"Assets/Slideshow/cola.png"
