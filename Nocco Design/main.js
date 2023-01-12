@@ -4,7 +4,7 @@ import '/Nocco Design/array.js'
 
 document.querySelector('#slideShow').innerHTML = `
 <div class="imgSlider">
-<img src="Assets/Slideshow/cola.png"></img><br>
+<img name=slider src="Assets/Slideshow/cola.png"></img><br>
 <button class="material-symbols-outlined" id="arrow_left">
 arrow_left
 </button>
@@ -25,13 +25,36 @@ document.querySelector(".noccoLogo").classList.remove("hidden");
 document.querySelector(".logo").classList.remove("hidden");
 menuBtn.addEventListener("click", toggleClass)
 closeBtn.addEventListener("click", toggleClass)
-arrowLeft.addEventListener("click", togglePics)
-arrowRight.addEventListener("click", togglePics)
+arrowLeft.addEventListener("click", imageSliderMinus)
+arrowRight.addEventListener("click", imageSliderPlus)
+let i = 0; 			// Start Point
+let images = [];	// Images Array
+	 
+// Image List
+images[0] = "Assets/Slideshow/cola.png";
+images[1] = "Assets/Slideshow/focus.png";
+images[2] = "Assets/Slideshow/frame.png";
 
-
-function togglePics() {
-  console.log('Kuken')
+// Change Image
+function imageSliderPlus(){
+	document.slider.src = images[i]; 
+	if(i < images.length - 1){
+	  i++; 
+	} else { 
+		i = 0;
+	}
 }
+
+function imageSliderMinus(){
+	document.slider.src = images[i]; 
+	if(i < 1){
+		i = images.length -1;
+	}else {
+	  i--; 
+  }
+}
+
+imageSliderPlus()
 
 function toggleClass(){
   console.log('hej');

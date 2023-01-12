@@ -1,138 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nocco Design</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nocco Design</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <header class="nav">
-    <button class="material-symbols-outlined" id="menuBtn">menu</button>
-    <button class="material-symbols-outlined hidden" id="closeBtn">close</button>
+  <body>
+    <header class="nav">
+      <button class="material-symbols-outlined" id="menuBtn">menu</button>
 
-    <div id="hamburger" class="hidden">
-      <ul>
-        <li><a>HEM</a></li>
-        <li><a>SORTIMENT</a></li>
-        <li><a>KONTAKT</a></li>
-      </ul>
+      <div id="hamburger" class="hidden">
+        <button class="material-symbols-outlined hidden" id="closeBtn">
+          close
+        </button>
 
-      <div class="menulogo" id="menulogo">
-        <img src="./Assets/Icons/logooo.png" alt="" class="menunoccologo" id="menunoccologo">
-      </div>
-    </div>
+        <ul>
+          <li><a>HEM</a></li>
+          <li><a>SORTIMENT</a></li>
+          <li><a>KONTAKT</a></li>
+        </ul>
 
-    <div class="logo hidden" id="logo">
-      <img src="./Assets/Icons/logooo.png" alt="" class="noccoLogo hidden" id="noccoLogo">
-    </div>
-
-  </header>
-
-  <main>
-    <div id="slideShow" class="slideShow">
-      <!-- VART ÄR KODEN????????, IM LIKE HELLA CUNFUSED, DEN FINNS MED PÅ LIVE SERVER MEN INTE HÄR WHAT!!!!! -->
-    </div>
-
-    <section id="assortment" class="assortment">
-      <article class="article-page-1">
-        <h1>Vårt Sortiment</h1>
-
-        <article>
-          <h3>Nocco Focus</h3>
-          <p>Drycken innehåller koffein och vitaminer. De är kolsyrade och helt fria från socker.</p>
-          <img src="/Assets/Drinks/RaspberryFocus.png" alt="Black nocco can with raspberry blast flavour" width="52"
-            height="114">
-          <img src="/Assets/Drinks/Cola.png" alt="Black nocco can with Cola flavour" width="52" height="114">
-        </article>
-
-        <article>
-          <h3>Nocco Koffeinfri</h3>
-          <p>Drycken innehåller BCAA och är helt fri från koffein. De är icke kolsyrade och fria från socker.</p>
-          <img src="/Assets/Drinks/carribien.png" alt="Green nocco can with carribean/pineapple flavour" width="52"
-            height="114">
-          <img src="/Assets/Drinks/äpple.png" alt="Green nocco can with apple flavour" width="52" height="114">
-        </article>
-
-      </article>
-
-      <article class="article-page-2">
-
-        <article>
-          <h3>Nocco PWO</h3>
-          <p>Drycken är berikad med BCAA, koffein, sju vitaminer och är helt utan socker.</p>
-          <img src="/Assets/Drinks/cherry.png" alt="Silver nocco can with cherry flavour" width="52" height="114">
-          <img src="/Assets/Drinks/blueRaspberry.png" alt="Silver nocco can with blue raspberry flavour" width="52"
-            height="114">
-        </article>
-
-        <article>
-          <h3>Nocco BCAA</h3>
-          <p>Drycken innehåller BCAA och aminosyror, koffein, vitaminer samt även extrakt av grön te. De är kolsyrade
-            och helt fria från socker.</p>
-          <img src="/Assets/Drinks/breez.png" alt="Lightblue nocco can with juicy breeze flavour" width="52"
-            height="114">
-          <img src="/Assets/Drinks/tomten.png" alt="Pink nocco can with a picture of santa and with skumtomte flavour"
-            width="52" height="114">
-          <img src="/Assets/Drinks/mango.png" alt="Red/pink/yellow nocco can with mango flavour" width="52"
-            height="114">
-        </article>
-
-      </article>
-    </section>
-
-    <section id="contact" class="contact">
-      <h4>Var Kan Man Köpa Nocco?</h4>
-
-      <article class="shop-logos">
-        <img src="/Assets/Icons/sats.png" alt="Sats logo, white background with orange text Sats" width="60"
-          height="60">
-        <img src="/Assets/Icons/pressbyrån.png"
-          alt="Pressbyrån logo, white background with an orange circle and the text Pressbyrån beneath" width="60"
-          height="60">
-        <img src="/Assets/Icons/nordicWellness.png"
-          alt="Nordic wellness logo, white background with the text Nordic wellness in blue and green" width="60"
-          height="60">
-        <img src="/Assets/Icons/7-eleven.png"
-          alt="7 eleven logo, white background with some green features and the text 7 Eleven in orange/red/green"
-          width="60" height="60">
-      </article>
-      
-      <br>
-
-      <div class="email">
-        <input type="email" id="email" name="email" placeholder="Email"><br>
-        <button class="subscribe" id="subscribe">Prenumerera</button>
+        <div class="menulogo" id="menulogo">
+          <img
+            src="./Assets/Icons/logooo.png"
+            alt=""
+            class="menunoccologo"
+            id="menunoccologo"
+          />
+        </div>
       </div>
 
-      <div class="social-media">
-        <img src="/Assets/Icons/instagram.svg" alt="Black Instagram logo" width="30" height="30">
-        <img src="/Assets/Icons/tiktok.svg" alt="Black Tiktok logo" width="30" height="30">
-        <img src="/Assets/Icons/youtube.svg" alt="Black Youtube logo" width="30" height="30">
-        <img src="/Assets/Icons/facebook.svg" alt="Black Facebook logo" width="30" height="30">
+      <div class="logo hidden" id="logo">
+        <img
+          src="./Assets/Icons/logooo.png"
+          alt=""
+          class="noccoLogo hidden"
+          id="noccoLogo"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div id="slideShow" class="slideShow">
+        <!-- VART ÄR KODEN????????, IM LIKE HELLA CUNFUSED, DEN FINNS MED PÅ LIVE SERVER MEN INTE HÄR WHAT!!!!! -->
       </div>
 
-      <footer class="footer">
-        <img src="/Assets/Icons/nocco logo.png" alt="Black Nocco logo with white text" width="100" height="100">
+      <section id="assortment" class="assortment">
+        <article class="article-page-1">
+          <h1>Vårt Sortiment</h1>
 
-        <div class="footer-links">
-          <a href="#">Kontakta oss</a>
-          <a href="#">Jobba hos oss</a>
-          <a href="#">Hem</a>
+          <article>
+            <h3>Nocco Focus</h3>
+            <p>
+              Drycken innehåller koffein och vitaminer. De är kolsyrade och helt
+              fria från socker.
+            </p>
+            <img
+              src="/Assets/Drinks/RaspberryFocus.png"
+              alt="Black nocco can with raspberry blast flavour"
+              width="52"
+              height="114"
+            />
+            <img
+              src="/Assets/Drinks/Cola.png"
+              alt="Black nocco can with Cola flavour"
+              width="52"
+              height="114"
+            />
+          </article>
+
+          <article>
+            <h3>Nocco Koffeinfri</h3>
+            <p>
+              Drycken innehåller BCAA och är helt fri från koffein. De är icke
+              kolsyrade och fria från socker.
+            </p>
+            <img
+              src="/Assets/Drinks/carribien.png"
+              alt="Green nocco can with carribean/pineapple flavour"
+              width="52"
+              height="114"
+            />
+            <img
+              src="/Assets/Drinks/äpple.png"
+              alt="Green nocco can with apple flavour"
+              width="52"
+              height="114"
+            />
+          </article>
+        </article>
+
+        <article class="article-page-2">
+          <article>
+            <h3>Nocco PWO</h3>
+            <p>
+              Drycken är berikad med BCAA, koffein, sju vitaminer och är helt
+              utan socker.
+            </p>
+            <img
+              src="/Assets/Drinks/cherry.png"
+              alt="Silver nocco can with cherry flavour"
+              width="52"
+              height="114"
+            />
+            <img
+              src="/Assets/Drinks/blueRaspberry.png"
+              alt="Silver nocco can with blue raspberry flavour"
+              width="52"
+              height="114"
+            />
+          </article>
+
+          <article>
+            <h3>Nocco BCAA</h3>
+            <p>
+              Drycken innehåller BCAA och aminosyror, koffein, vitaminer samt
+              även extrakt av grön te. De är kolsyrade och helt fria från
+              socker.
+            </p>
+            <img
+              src="/Assets/Drinks/breez.png"
+              alt="Lightblue nocco can with juicy breeze flavour"
+              width="52"
+              height="114"
+            />
+            <img
+              src="/Assets/Drinks/tomten.png"
+              alt="Pink nocco can with a picture of santa and with skumtomte flavour"
+              width="52"
+              height="114"
+            />
+            <img
+              src="/Assets/Drinks/mango.png"
+              alt="Red/pink/yellow nocco can with mango flavour"
+              width="52"
+              height="114"
+            />
+          </article>
+        </article>
+      </section>
+
+      <section id="contact" class="contact">
+        <h4>Var Kan Man Köpa Nocco?</h4>
+
+        <article class="shop-logos">
+          <img
+            src="/Assets/Icons/sats.png"
+            alt="Sats logo, white background with orange text Sats"
+            width="60"
+            height="60"
+          />
+          <img
+            src="/Assets/Icons/pressbyrån.png"
+            alt="Pressbyrån logo, white background with an orange circle and the text Pressbyrån beneath"
+            width="60"
+            height="60"
+          />
+          <img
+            src="/Assets/Icons/nordicWellness.png"
+            alt="Nordic wellness logo, white background with the text Nordic wellness in blue and green"
+            width="60"
+            height="60"
+          />
+          <img
+            src="/Assets/Icons/7-eleven.png"
+            alt="7 eleven logo, white background with some green features and the text 7 Eleven in orange/red/green"
+            width="60"
+            height="60"
+          />
+        </article>
+
+        <br />
+
+        <div class="email">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          /><br />
+          <button class="subscribe" id="subscribe">Prenumerera</button>
         </div>
 
-        <p class="footertext">ADDRESS<br>No Carbs<br>Company<br>Box 55929<br>10216 Stockholm</p>
+        <div class="social-media">
+          <img
+            src="/Assets/Icons/instagram.svg"
+            alt="Black Instagram logo"
+            width="30"
+            height="30"
+          />
+          <img
+            src="/Assets/Icons/tiktok.svg"
+            alt="Black Tiktok logo"
+            width="30"
+            height="30"
+          />
+          <img
+            src="/Assets/Icons/youtube.svg"
+            alt="Black Youtube logo"
+            width="30"
+            height="30"
+          />
+          <img
+            src="/Assets/Icons/facebook.svg"
+            alt="Black Facebook logo"
+            width="30"
+            height="30"
+          />
+        </div>
 
-      </footer>
-    </section>
+        <footer class="footer">
+          <img
+            src="/Assets/Icons/nocco logo.png"
+            alt="Black Nocco logo with white text"
+            width="100"
+            height="100"
+          />
 
-    <script type="module" src="Nocco Design/main.js"></script>
-  </main>
-</body>
+          <div class="footer-links">
+            <a href="#">Kontakta oss</a>
+            <a href="#">Jobba hos oss</a>
+            <a href="#">Hem</a>
+          </div>
 
+          <p class="footertext">
+            ADDRESS<br />No Carbs<br />Company<br />Box 55929<br />10216
+            Stockholm
+          </p>
+        </footer>
+      </section>
+
+      <script type="module" src="Nocco Design/main.js"></script>
+    </main>
+  </body>
 </html>
