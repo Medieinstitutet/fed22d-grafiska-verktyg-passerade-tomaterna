@@ -23,8 +23,9 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 img {
@@ -43,9 +44,10 @@ img {
   display: none;
 }
 
-.visa {
+.show {
   display: flex;
 }
+
 header {
   height: 100px;
   background-color: #1a1a1a;
@@ -161,19 +163,46 @@ h1 {
   line-height: 1.1;
 }
 
+
 .logo {
-  will-change: filter;
   position: absolute;
-  height: 120px;
-  width: 140px;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 120px;
+  width: 140px;
+  margin: auto;
+  display: flex;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vanilla:hover {
   filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.noccoLogo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menulogo{
+  height: 120px;
+  width: 140px;
+  left: 50%;
+  top: 50%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.menunoccologo{
+  
+
 }
 
 .card {
@@ -195,9 +224,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
