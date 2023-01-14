@@ -8,17 +8,6 @@
   background-color: #38834d;
 }
 
-a {
-  font-weight: 500;
-  color: #72cf26;
-  color: #fdfdfd;
-  text-decoration: inherit;
-  justify-content: stretch;
-}
-a:hover {
-  color: hotpink;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -28,35 +17,90 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  height: 100px;
+  background-color: #1a1a1a;
+}
+
+.menuclos{
+  display: flex;
+  position: relative;
+  margin-left: auto;
+}
+
+.menuopen{
+  position: relative;
+  margin-left: auto;
+  background-color: #31774F;
+}
+
 img {
   max-width: 80%;
 }
 
-#hamburger {
-  background-color: #222222;
-  color: #ffffff;
-  max-width: 50%;
-  min-height: 100vh;
-  position: sticky;
-}
-
-.hidden {
-  display: none;
-}
-
-.show {
+.logo {
+  position: absolute;
+  margin-top: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 120px;
+  width: 140px;
+  margin: auto;
   display: flex;
 }
 
-header {
-  height: 100px;
-  background-color: #1a1a1a;
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.noccoLogo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menulogo {
+  height: 120px;
+  width: 140px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.menu {
+  background-color: #0B0A0A;
+  color: #ffffff;
+  width: 50%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+a {
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: inherit;
+  justify-content: stretch;
+}
+a:hover {
+  color: hotpink;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+li {
+  text-align: center;
 }
 
 h1 {
@@ -76,6 +120,13 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
+}
+
+.slideShow {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
 }
 
 .assortment {
@@ -146,60 +197,10 @@ input {
   color: #fdfdfd;
 }
 
-#slideShow {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  height: 100vh;
-}
-
+/* vad gör detta här garbbar när vi har redan h1 uppåt */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-.logo {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 120px;
-  width: 140px;
-  margin: auto;
-  display: flex;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.noccoLogo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.menulogo {
-  height: 120px;
-  width: 140px;
-  left: 50%;
-  top: 50%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-
-.menunoccologo {
 }
 
 .card {
@@ -229,6 +230,14 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
 }
 
 @media (prefers-color-scheme: light) {
