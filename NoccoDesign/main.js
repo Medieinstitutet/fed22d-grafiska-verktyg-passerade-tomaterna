@@ -1,5 +1,5 @@
 import './style.css'
-import '/Nocco Design/array.js'
+import '/NoccoDesign/array.js'
 
 // i transfered all the code inside th ehtml cuz that way everything works better
 // document.querySelector('#slideShow').innerHTML =
