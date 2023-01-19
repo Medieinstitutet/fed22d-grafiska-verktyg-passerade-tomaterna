@@ -22,16 +22,16 @@ header {
   background-color: #1a1a1a;
 }
 
-.menuclos{
+.menuclos {
   display: flex;
   position: relative;
   margin-left: auto;
 }
 
-.menuopen{
+.menuopen {
   position: relative;
   margin-left: auto;
-  background-color: #31774F;
+  background-color: #31774f;
 }
 
 img {
@@ -76,7 +76,7 @@ img {
 }
 
 .menu {
-  background-color: #0B0A0A;
+  background-color: #0b0a0a;
   color: #ffffff;
   width: 50%;
   min-height: 100vh;
@@ -85,7 +85,7 @@ img {
 
 a {
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: inherit;
   justify-content: stretch;
 }
@@ -120,6 +120,9 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
+}
+header button {
+  border: 2px solid blue;
 }
 
 .slideShow {
@@ -250,5 +253,10 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    width: 0px;
   }
 }
