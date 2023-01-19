@@ -57,6 +57,37 @@ img {
   filter: drop-shadow(0 0 2em #f7df1eaa);
 }
 
+.cookies-banner {
+  background: #1a1a1a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  border-radius: 15px;
+}
+
+.cookies-banner button {
+  font-family: "Roboto", sans-serif;
+  background: #fdfdfd;
+  color: #1a1a1a;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 4px 7px;
+  margin: 2px 0;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+
+.cookies-banner button:hover {
+  background: #fff;
+  color: #222;
+}
+
 .noccoLogo {
   position: absolute;
   top: 40%;
@@ -120,6 +151,7 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 3rem;
 }
 header button {
   border: 2px solid blue;
@@ -138,11 +170,16 @@ header button {
 
 .article-page-1,
 .article-page-2 {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
 }
 
 .shop-logos {
@@ -150,11 +187,14 @@ header button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .email {
   text-align: center;
-  padding: 1.5rem;
+  padding: 0.5rem;
+  margin-bottom: 5rem;
 }
 
 .subscribe {
@@ -171,6 +211,10 @@ header button {
   transition: 0.2s;
 }
 
+.subscribe:active {
+  background-color: #740318;
+}
+
 input {
   background-color: #dfdfdf;
   color: #222222;
@@ -184,12 +228,15 @@ input {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 10rem;
 }
 
 .footer {
   position: static;
+  right: 0;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -200,10 +247,8 @@ input {
   color: #fdfdfd;
 }
 
-/* vad gör detta här garbbar när vi har redan h1 uppåt */
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.footer-nocco-logo {
+  background-color: #0b0a0a;
 }
 
 .card {
@@ -255,8 +300,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  header {
-    width: 0px;
-  }
+
+@media (min-width: 1025px) {
 }
