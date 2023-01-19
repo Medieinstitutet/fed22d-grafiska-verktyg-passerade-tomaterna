@@ -57,6 +57,37 @@ img {
   filter: drop-shadow(0 0 2em #f7df1eaa);
 }
 
+.cookies-banner {
+  background: #1a1a1a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  border-radius: 15px;
+}
+
+.cookies-banner button {
+  font-family: "Roboto", sans-serif;
+  background: #FDFDFD;
+  color: #1a1a1a;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 4px 7px;
+  margin: 2px 0;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+
+.cookies-banner button:hover {
+  background: #fff;
+  color: #222;
+}
+
 .noccoLogo {
   position: absolute;
   top: 40%;
@@ -173,8 +204,12 @@ h4 {
 }
 
 .subscribe:hover {
-  background-color: #c90c2e;
+  background-color: #C90C2E;
   transition: 0.2s;
+}
+
+.subscribe:active {
+  background-color:#740318
 }
 
 input {
@@ -261,4 +296,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media (min-width: 1025px) {
+
 }

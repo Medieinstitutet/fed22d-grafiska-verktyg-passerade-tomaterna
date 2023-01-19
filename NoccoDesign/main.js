@@ -53,3 +53,24 @@ function toggleClass(){
   logo.classList.toggle("hidden");
   noccoLogo.classList.toggle("hidden");
 }
+
+
+// Cookie pop-up, will always reappear when reloading site
+
+const $cookiesBanner = document.querySelector(".cookies-banner");
+
+if ($cookiesBanner) {
+  $cookiesBanner.innerHTML = `
+    <div>
+    Genom att markera ”Acceptera cookies” godkänner du att Nocco får använda cookies, pixlar, taggar och liknande tekniker. 
+    Vi använder dessa tekniker för att samla in information från din enhet och webbläsare för att följa dina aktiviteter i annonserings- och funktionssyfte,
+    till exempel för att personanpassa reklam och förbättra webbplatsen.<br>
+        <button class="accept">Acceptera cookies</button>
+        <button>Cookie inställningar</button>
+    </div>
+    `
+  const $acceptButton = $cookiesBanner.querySelector(".accept"); // Eventlistener for accept btn
+  $acceptButton.addEventListener("click", () => {
+    $cookiesBanner.remove();
+  });
+}
