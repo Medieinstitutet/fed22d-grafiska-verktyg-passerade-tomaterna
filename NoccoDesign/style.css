@@ -300,6 +300,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.tablet-text {
+  display: none;
+  font-size: 25px;
+  text-align: center;
+}
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   :root {
@@ -607,4 +612,9 @@ button:focus-visible {
 }
 
 @media screen and (min-width: 1025px) {
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .tablet-text {
+    display: block;
+  }
 }
