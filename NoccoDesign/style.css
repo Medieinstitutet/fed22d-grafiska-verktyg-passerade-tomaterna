@@ -5,7 +5,9 @@
   font-weight: bolder;
   color-scheme: dark;
   color: #222222;
-  background-color: #38834d;
+  background-image: linear-gradient(to bottom, #38834d 10%, #e6e6e6 100%);
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 body {
