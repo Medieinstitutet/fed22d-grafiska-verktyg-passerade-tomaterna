@@ -1,7 +1,6 @@
 import './style.css'
 import '/NoccoDesign/array.js'
 
-const logo = document.getElementById('logo');
 const noccoLogo = document.getElementById('noccoLogo');
 // const slideShow = document.getElementById('slideShow');
 const menuBtn = document.getElementById('menuBtn')
@@ -54,7 +53,6 @@ function toggleClass(){
   content.classList.toggle('hidden');
   document.querySelector(".nav").classList.toggle("hidden");
 
-  logo.classList.toggle("hidden");
   noccoLogo.classList.toggle("hidden");
 }
 
