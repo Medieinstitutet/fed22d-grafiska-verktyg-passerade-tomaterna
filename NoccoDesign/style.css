@@ -298,6 +298,31 @@ button:focus-visible {
   }
 }
 
-@media (min-width: 1025px) {
 
+@media only screen and (min-width: 1025px) {
+
+  .logo {
+    top: 0;
+    left: 0;
+    transform: translate(50%);
+  }
+  
+  #menuBtn {
+    display: none;
+  }
+
+  .caffeinfreebtn,
+  .pwobtn,
+  .bcaabtn,
+  .focusbtn {
+    color: #FDFDFD;
+    outline: none;
+  }
+
+  .pwo, .bcaa, .caffeinfree, .focus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
+
