@@ -22,16 +22,16 @@ header {
   background-color: #1a1a1a;
 }
 
-.menuclos{
+.menuclos {
   display: flex;
   position: relative;
   margin-left: auto;
 }
 
-.menuopen{
+.menuopen {
   position: relative;
   margin-left: auto;
-  background-color: #31774F;
+  background-color: #31774f;
 }
 
 img {
@@ -72,7 +72,7 @@ img {
 
 .cookies-banner button {
   font-family: "Roboto", sans-serif;
-  background: #FDFDFD;
+  background: #fdfdfd;
   color: #1a1a1a;
   border: 1px solid #000;
   cursor: pointer;
@@ -107,7 +107,7 @@ img {
 }
 
 .menu {
-  background-color: #0B0A0A;
+  background-color: #0b0a0a;
   color: #ffffff;
   width: 50%;
   min-height: 100vh;
@@ -116,7 +116,7 @@ img {
 
 a {
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: inherit;
   justify-content: stretch;
 }
@@ -152,6 +152,9 @@ h4 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 3rem;
+}
+header button {
+  border: 2px solid blue;
 }
 
 .slideShow {
@@ -191,7 +194,7 @@ h4 {
 .email {
   text-align: center;
   padding: 0.5rem;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
 }
 
 .subscribe {
@@ -204,12 +207,12 @@ h4 {
 }
 
 .subscribe:hover {
-  background-color: #C90C2E;
+  background-color: #c90c2e;
   transition: 0.2s;
 }
 
 .subscribe:active {
-  background-color:#740318
+  background-color: #740318;
 }
 
 input {
@@ -225,7 +228,7 @@ input {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom:10rem;
+  margin-bottom: 10rem;
 }
 
 .footer {
@@ -245,7 +248,7 @@ input {
 }
 
 .footer-nocco-logo {
-  background-color: #0B0A0A;
+  background-color: #0b0a0a;
 }
 
 .card {
@@ -302,6 +305,12 @@ button:focus-visible {
   visibility:hidden;
 }
 
+.tablet-text {
+  display: none;
+  font-size: 25px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1025px) {
 
   .logo {
@@ -321,7 +330,6 @@ button:focus-visible {
     color: #FDFDFD;
     outline: none;
   }
-
 
   .nocconews {
     visibility: visible;
@@ -374,5 +382,320 @@ button:focus-visible {
     flex-direction: row;
     justify-content:end;
   }
+  .pwo, .bcaa, .caffeinfree, .focus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  :root {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bolder;
+    color-scheme: dark;
+    color: #222222;
+    background-color: #38834d;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  header {
+    height: 100px;
+    background-color: #1a1a1a;
+  }
+  
+  .menuclos {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+  }
+  
+  .menuopen {
+    position: relative;
+    margin-left: auto;
+    background-color: #31774f;
+  }
+  
+  img {
+    max-width: 80%;
+  }
+  
+  .logo {
+    position: absolute;
+    margin-top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 120px;
+    width: 140px;
+    margin: auto;
+    display: flex;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  
+  .logo.vanilla:hover {
+    filter: drop-shadow(0 0 2em #f7df1eaa);
+  }
+  
+  .cookies-banner {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    border-radius: 15px;
+  }
+  
+  .cookies-banner button {
+    font-family: "Roboto", sans-serif;
+    background: #fdfdfd;
+    color: #1a1a1a;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.07s, color 0.07s, border-color 0.07s;
+  }
+  
+  .cookies-banner button:hover {
+    background: #fff;
+    color: #222;
+  }
+  
+  .noccoLogo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .menulogo {
+    height: 120px;
+    width: 140px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .menu {
+    background-color: #0b0a0a;
+    color: #ffffff;
+    width: 50%;
+    min-height: 100vh;
+    position: absolute;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: inherit;
+    justify-content: stretch;
+  }
+  a:hover {
+    color: hotpink;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3.2em;
+    line-height: 1.1;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  header button {
+    border: 2px solid blue;
+  }
+  
+  .slideShow {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .assortment {
+    text-align: center;
+  }
+  
+  .article-page-1,
+  .article-page-2 {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .shop-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .email {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .subscribe {
+    border-radius: 25px;
+    background-image: linear-gradient(#fe0b0b, hsl(0, 77%, 72%));
+    margin: 1.5rem;
+    color: #222222;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  
+  .subscribe:hover {
+    background-color: #c90c2e;
+    transition: 0.2s;
+  }
+  
+  .subscribe:active {
+    background-color: #740318;
+  }
+  
+  input {
+    background-color: #dfdfdf;
+    color: #222222;
+    border-radius: 25px;
+    min-height: 30px;
+    min-width: 30px;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+  
+  .footer {
+    position: static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footertext {
+    color: #fdfdfd;
+  }
+  
+  .footer-nocco-logo {
+    background-color: #0b0a0a;
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  button:hover {
+    border-color: #646cff;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .show {
+    display: flex;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
 }
 
+@media (min-width: 768px) and (max-width: 1280px) {
+  .tablet-text {
+    display: block;
+  }
+}
+}
