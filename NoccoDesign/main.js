@@ -1,47 +1,51 @@
 import './style.css'
 import '/NoccoDesign/array.js'
 
-// i transfered all the code inside th ehtml cuz that way everything works better
-// document.querySelector('#slideShow').innerHTML =
-// `
-// <div class="imgSlider">
-// <img src="Assets/Slideshow/cola.png"></img><br>
-// <button class="material-symbols-outlined" id="arrow_left">
-// arrow_left
-// </button>
-// <button class="material-symbols-outlined" id="arrow_right">
-// arrow_right
-// </button>
-// </div>
-// `
-
-
 const logo = document.getElementById('logo');
 const noccoLogo = document.getElementById('noccoLogo');
 // const slideShow = document.getElementById('slideShow');
 const menuBtn = document.getElementById('menuBtn')
 const closeBtn = document.getElementById('closeBtn')
-const arrowLeft = document.getElementById('arrow_left')
 const arrowRight = document.getElementById('arrow_right')
+const arrowLeft = document.getElementById('arrow_left')
 const hamburger = document.getElementById('hamburger')
 const content = document.getElementById('everythingContainer')
+const SliderImage = document.querySelectorAll('.imgSlider img')
+
+let currentSlide = 0;
 
 document.querySelector(".noccoLogo").classList.remove("hidden");
 document.querySelector(".logo").classList.remove("hidden");
 
 menuBtn.addEventListener("click", toggleClass)
 closeBtn.addEventListener("click", toggleClass)
-arrowLeft.addEventListener("click", togglePics)
-arrowRight.addEventListener("click", togglePics)
+arrowRight.addEventListener("click", slideRight)
+arrowLeft.addEventListener("click", slideLeft)
 
+SliderImage.forEach((img, index) => {
+  if (index !== currentSlide) {
+    img.classList.add('hidden');
+  }
+});
 
-function togglePics() {
-  console.log('Kuken')
+function slideRight() {
+  SliderImage[currentSlide].classList.add('hidden');
+
+  currentSlide = (currentSlide + 1) % SliderImage.length;
+
+  SliderImage[currentSlide].classList.remove('hidden');
+}
+
+function slideLeft(){
+  SliderImage[currentSlide].classList.add('hidden');
+
+  currentSlide = (currentSlide - 1 + SliderImage.length) % SliderImage.length;
+
+  SliderImage[currentSlide].classList.remove('hidden');
 }
 
 function toggleClass(){
-  console.log('hej');
-
+  
   hamburger.classList.toggle('hidden');
 
   menuBtn.classList.toggle('hidden');
